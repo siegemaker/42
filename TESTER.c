@@ -11,12 +11,12 @@
 */
 int	main(void)
 {
-	//int FD = open("./testfile",O_RDONLY);
-	//int FD = open("./read_error.txt",O_RDONLY);
 	//int FD = open("./test_copypasta.txt",O_RDONLY);
 	//int FD = open("./test_empty.txt",O_RDONLY);
 	//int FD = open("./test_long.txt",O_RDONLY);
-	int FD = open("./test.txt",O_RDONLY);
+	int FD = open("./test_genesis.txt",O_RDONLY);
+	//int FD = open("./test.txt",O_RDONLY);
+	//int	FD = -1;
 	int	i = 0;
 	char *line;
 
