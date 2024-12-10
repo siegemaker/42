@@ -4,11 +4,14 @@ SRC = TESTER.c \
 ../get_next_line_utils.c
 OBJ = $(SRCS:.c=.o)
 FLAGS = -Wall -Wextra -Werror
+ifdef BUFFER_SIZE
+	FLAGS += -DBUFFER_SIZE=$(BUFFER_SIZE)
+endif
 
 all: $(NAME)
 
 $(NAME):
-	@cc  $(FLAGS) -D BUFFER_SIZE=43 $(SRC) -o $(NAME)
+	@cc  $(FLAGS) $(SRC) -o $(NAME)
 	@./$(NAME)
 	@make -s fclean
 
