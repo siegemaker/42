@@ -1,21 +1,14 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include "../get_next_line.h"
-/*
 
-	put this tester's folder in the project folder
-
-	NOTES:
-	A succesful read function advances the file position is incremented by the amount of bytes read.
-	the line returned must already have a lineEnd right?
-*/
 int	main(void)
 {
 	//int FD = open("./test_copypasta.txt",O_RDONLY);
 	//int FD = open("./test_empty.txt",O_RDONLY);
 	//int FD = open("./test_long.txt",O_RDONLY);
-	int FD = open("./test_genesis.txt",O_RDONLY);
-	//int FD = open("./test.txt",O_RDONLY);
+	//int FD = open("./test_genesis.txt",O_RDONLY);
+	int FD = open("./test.txt",O_RDONLY);
 	//int	FD = -1;
 	int	i = 0;
 	char *line;
