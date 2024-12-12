@@ -12,7 +12,7 @@ all: $(NAME)
 
 $(NAME):
 	@cc  $(FLAGS) $(SRC) -o $(NAME)
-	@./$(NAME)
+	@valgrind ./$(NAME)
 	@make -s fclean
 
 clean:
